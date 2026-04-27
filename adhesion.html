@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adhésion – Club Culturel El Medina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+<body class="theme-club">
+<header class="site-header">
+    <div class="logo">
+        <h1>Club Culturel El Medina</h1>
+    </div>
+    <nav class="main-nav" aria-label="Menu principal">
+        <ul class="nav-list">
+            <li><a href="home.html">Accueil</a></li>
+            <li><a href="index.html">Connexion</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="adhesion.html" class="active">Adhésion</a></li>
+            <li><a href="calendrier.html">Calendrier</a></li>
+            <li><a href="profile.html">Profil</a></li>
+        </ul>
+    </nav>
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<main>
+    <h2>Devenez membre du Club Culturel El Medina</h2>
+    <p>
+        Rejoindre le Club Culturel El Medina, c'est bénéficier d'une priorité sur les 
+        réservations d'événements, de tarifs réduits sur nos ateliers et spectacles, 
+        de notre newsletter mensuelle et d'un accès privilégié à nos activités exclusives. 
+        C'est aussi soutenir activement la préservation et la promotion de la culture tunisienne.
+    </p>
+
+    <form class="form-container" method="get" action="#" id="adhesion-form">
+
+        <fieldset>
+            <legend>Informations personnelles</legend>
+
+            <div class="form-group">
+                <label for="nom-complet">Nom complet *</label>
+                <input type="text" id="nom-complet" name="nom" required aria-required="true" placeholder="ex: Ahmed Ben Ali">
+            </div>
+
+            <div class="form-group">
+                <label for="email-adhesion">Email *</label>
+                <input type="email" id="email-adhesion" name="email" required aria-required="true" placeholder="ex: user@club.tn">
+            </div>
+
+            <div class="form-group">
+                <label for="tel-adhesion">Téléphone</label>
+                <input type="tel" id="tel-adhesion" name="telephone" pattern="\d{8}" placeholder="ex: 98123456" aria-label="Numéro de téléphone tunisien (8 chiffres)">
+            </div>
+
+            <div class="form-group">
+                <label for="date-naissance">Date de naissance</label>
+                <input type="date" id="date-naissance" name="naissance">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Vos préférences</legend>
+
+            <div class="form-group">
+                <label for="interets">Centres d'intérêt (maintenez Ctrl pour sélectionner plusieurs)</label>
+                <select id="interets" name="interets" multiple size="5" aria-label="Sélectionnez vos centres d'intérêt culturels">
+                    <option value="gnawa">Musique traditionnelle / Gnawa</option>
+                    <option value="calligraphie">Calligraphie &amp; Arts visuels</option>
+                    <option value="poesie">Poésie &amp; Slam</option>
+                    <option value="theatre">Théâtre &amp; Ateliers</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="motivation">Message ou motivation (optionnel)</label>
+                <textarea id="motivation" name="motivation" rows="4" placeholder="Dites-nous pourquoi vous souhaitez rejoindre le club..."></textarea>
+            </div>
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary">Envoyer ma demande d'adhésion</button>
+
+    </form>
+
+    <p class="form-note">* Champs obligatoires</p>
+</main>
+
+<footer class="site-footer">
+    <p>© 2026 Club Culturel El Medina – Tunis | Tous droits réservés</p>
+    <p><a href="contact.html">Nous contacter</a> | <a href="about.html">À propos</a></p>
+</footer>
+    <script>
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.main-nav');
+  burger.addEventListener('click', function() {
+    burger.classList.toggle('active');
+    nav.classList.toggle('active');
+  });
+</script>
+<script src="js/script.js"></script> 
+</body>
+</html>

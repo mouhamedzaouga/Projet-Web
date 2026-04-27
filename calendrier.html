@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendrier – Club Culturel El Medina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+<body class="theme-club">
+<header class="site-header">
+    <div class="logo">
+        <h1>Club Culturel El Medina</h1>
+    </div>
+    <nav class="main-nav" aria-label="Menu principal">
+        <ul class="nav-list">
+            <li><a href="home.html">Accueil</a></li>
+            <li><a href="index.html">Connexion</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="adhesion.html">Adhésion</a></li>
+            <li><a href="calendrier.html" class="active">Calendrier</a></li>
+            <li><a href="profile.html">Profil</a></li>
+        </ul>
+    </nav>
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<main>
+    <h2>Calendrier des événements 2026</h2>
+    <p>
+        Retrouvez ici tous les événements à venir organisés par le Club Culturel El Medina. 
+        Planifiez votre agenda et inscrivez-vous avant qu'il ne soit trop tard !
+    </p>
+
+    <section class="calendrier-dl">
+        <h3>Programme détaillé</h3>
+        <dl>
+            <dt>15 mars 2026</dt>
+            <dd>
+                <strong>Soirée Gnawa Traditionnelle</strong> – Dar Lasram, Médina | 20h00
+                <br><a href="event-details.html?id=1" class="btn btn-secondary">Voir détails</a>
+            </dd>
+
+            <dt>22 mars 2026</dt>
+            <dd>
+                <strong>Expo Art Contemporain</strong> – La Marsa | Journée entière
+                <br><a href="event-details2.html" class="btn btn-secondary">Voir détails</a>
+            </dd>
+
+            <dt>28 mars 2026</dt>
+            <dd>
+                <strong>Atelier Théâtre</strong> – Musée du Bardo | 15h00
+                <br><a href="event-details3.html" class="btn btn-secondary">Voir détails</a>
+            </dd>
+
+            <dt>5 avril 2026</dt>
+            <dd>
+                <strong>Soirée Poésie</strong> – Carthage | 19h00
+                <br><a href="event-details4.html" class="btn btn-secondary">Voir détails</a>
+            </dd>
+
+            <dt>20 avril 2026</dt>
+            <dd>
+                <strong>Concert de Musique Andalouse</strong> – Théâtre Municipal, Tunis | 21h00
+                <br><a href="event-details.html?id=5" class="btn btn-secondary">Voir détails</a>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="calendrier-table">
+        <h3>Vue tableau</h3>
+        <table>
+            <caption>Événements à venir – 2026</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Événement</th>
+                    <th scope="col">Lieu</th>
+                    <th scope="col">Détails</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>15 mars 2026</td>
+                    <td><strong>Soirée Gnawa Traditionnelle</strong></td>
+                    <td>Dar Lasram, Médina</td>
+                    <td><a href="event-details.html?id=1" class="btn btn-secondary">Voir</a></td>
+                </tr>
+                <tr>
+                    <td>22 mars 2026</td>
+                    <td><strong>Expo Art Contemporain</strong></td>
+                    <td>La Marsa</td>
+                    <td><a href="event-details2.html" class="btn btn-secondary">Voir</a></td>
+                </tr>
+                <tr>
+                    <td>28 mars 2026</td>
+                    <td><strong>Atelier Théâtre</strong></td>
+                    <td>Musée du Bardo</td>
+                    <td><a href="event-details3.html" class="btn btn-secondary">Voir</a></td>
+                </tr>
+                <tr>
+                    <td>5 avril 2026</td>
+                    <td><strong>Soirée Poésie</strong></td>
+                    <td>Carthage</td>
+                    <td><a href="event-details4.html" class="btn btn-secondary">Voir</a></td>
+                </tr>
+                <tr>
+                    <td>20 avril 2026</td>
+                    <td><strong>Concert Musique Andalouse</strong></td>
+                    <td>Théâtre Municipal</td>
+                    <td><a href="event-details.html?id=5" class="btn btn-secondary">Voir</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <p class="cta-text">
+        Vous voulez être informé en priorité de nos prochains événements ?
+        <a href="adhesion.html" class="btn btn-primary">Devenez membre</a>
+    </p>
+</main>
+
+<footer class="site-footer">
+    <p>© 2026 Club Culturel El Medina – Tunis | Tous droits réservés</p>
+    <p><a href="contact.html">Nous contacter</a> | <a href="about.html">À propos</a></p>
+</footer>
+    <script>
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.main-nav');
+  burger.addEventListener('click', function() {
+    burger.classList.toggle('active');
+    nav.classList.toggle('active');
+  });
+</script>
+<script src="js/script.js"></script> 
+</body>
+</html>

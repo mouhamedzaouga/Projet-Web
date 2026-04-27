@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil – Club Culturel El Medina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-club">
+<header class="site-header">
+    <div class="logo">
+        <h1>Club Culturel El Medina</h1>
+    </div>
+    <nav class="main-nav" aria-label="Menu principal">
+        <ul class="nav-list">
+            <li><a href="home.html">Accueil</a></li>
+            <li><a href="index.html">Connexion</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="adhesion.html">Adhésion</a></li>
+            <li><a href="calendrier.html">Calendrier</a></li>
+            <li><a href="profile.html" class="active">Profil</a></li>
+        </ul>
+    </nav>
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<main>
+    <h2>Votre profil</h2>
+
+    <!-- ✅ id="user-email" : sera rempli par script.js -->
+    <p>Connecté en tant que : <strong id="user-email"></strong></p>
+
+    <button class="btn btn-primary" onclick="logout()" style="margin: 1rem 0;">
+        Se déconnecter
+    </button>
+
+    <h3>Vos inscriptions</h3>
+    <!-- ✅ id="inscriptions-list" : sera rempli par script.js -->
+    <ul id="inscriptions-list">
+        <li>Aucune inscription pour l'instant.</li>
+    </ul>
+</main>
+
+<footer class="site-footer">
+    <p>© 2026 Club Culturel El Medina – Tunis | Tous droits réservés</p>
+    <p><a href="contact.html">Nous contacter</a> | <a href="about.html">À propos</a></p>
+</footer>
+
+<!-- ✅ script.js en bas du body, APRÈS le DOM -->
+<script src="js/script.js"></script>
+</body>
+</html>

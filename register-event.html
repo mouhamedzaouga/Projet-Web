@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription événement – Club Culturel El Medina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-club">
+<header class="site-header">
+    <div class="logo">
+        <h1>Club Culturel El Medina</h1>
+    </div>
+    <nav class="main-nav" aria-label="Menu principal">
+        <ul class="nav-list">
+            <li><a href="home.html">Accueil</a></li>
+            <li><a href="index.html">Connexion</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="adhesion.html">Adhésion</a></li>
+            <li><a href="calendrier.html">Calendrier</a></li>
+            <li><a href="profile.html">Profil</a></li>
+        </ul>
+    </nav>
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<main>
+    <h2 id="register-titre">Inscription à l'événement</h2>
+    <form id="register-form" method="get" action="#">
+        <div class="form-container">
+
+            <label for="nom">Nom complet :</label>
+            <input type="text" id="nom" name="nom" required placeholder="ex: Ahmed Ben Ali">
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required placeholder="ex: user@club.tn">
+
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="ex: 98123456" required>
+
+            <label for="places">Nombre de places :</label>
+            <input type="number" id="places" name="places" min="1" max="10" value="1" required>
+
+            <label for="message">Remarques (optionnel) :</label>
+            <textarea id="message" name="message" rows="4" placeholder="Une remarque particulière ?"></textarea>
+
+            <div id="success-message" class="success" style="display: none;"></div>
+            <div id="error-message" class="error" style="display: none;"></div>
+
+            <button type="submit" class="btn btn-primary">S'inscrire</button>
+        </div>
+    </form>
+</main>
+
+<footer class="site-footer">
+    <p>© 2026 Club Culturel El Medina – Tunis | Tous droits réservés</p>
+    <p><a href="contact.html">Nous contacter</a> | <a href="about.html">À propos</a></p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

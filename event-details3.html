@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier Théâtre – Club Culturel El Medina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<body class="theme-club">
+<header class="site-header">
+    <div class="logo">
+        <h1>Club Culturel El Medina</h1>
+    </div>
+    <nav class="main-nav" aria-label="Menu principal">
+        <ul class="nav-list">
+            <li><a href="home.html">Accueil</a></li>
+            <li><a href="index.html">Connexion</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="adhesion.html">Adhésion</a></li>
+            <li><a href="calendrier.html">Calendrier</a></li>
+            <li><a href="profile.html">Profil</a></li>
+        </ul>
+    </nav>
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<main>
+    <h2>Atelier Théâtre</h2>
+    <img src="image3.jpg" alt="Atelier Théâtre">
+    <p class="infos">Date : 28 mars 2026 | Lieu : Bardo</p>
+    <p>
+        Rejoignez notre atelier théâtre ouvert à tous les niveaux au musée du Bardo. 
+        Animé par des comédiens professionnels, cet atelier vous initiera aux techniques 
+        de base de l'art dramatique : expression corporelle, improvisation, travail de 
+        texte et mise en scène. Une expérience enrichissante pour développer votre 
+        créativité, votre confiance en soi et votre sens de l'expression artistique 
+        dans un cadre culturel exceptionnel.
+    </p>
+    <a href="register-event.html" class="btn btn-primary">S'inscrire à cet événement</a>
+</main>
+
+<footer class="site-footer">
+    <p>© 2026 Club Culturel El Medina – Tunis | Tous droits réservés</p>
+    <p><a href="contact.html">Nous contacter</a> | <a href="about.html">À propos</a></p>
+</footer>
+    <script>
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.main-nav');
+  burger.addEventListener('click', function() {
+    burger.classList.toggle('active');
+    nav.classList.toggle('active');
+  });
+</script>
+<script src="js/script.js"></script> 
+</body>
+</html>
